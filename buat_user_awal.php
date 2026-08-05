@@ -1,14 +1,15 @@
 <?php
 //buat_user_awal.php
-//jalankan file ini satu kali saja lewat browseruntuk user awal include 'config/koneksi.php';
+//jalankan file ini satu kali saja lewat browseruntuk user awal 
+include 'config/koneksi.php';
 
 $nama ='administrator';
-$usernamae ='admin';
+$username ='admin';
 $password = password_hash('admin123', PASSWORD_DEFAULT);
 $role = 'admin';
 
-$sql = "INSERT INTO tbl_user (nama_lengkap, username, password, role)";
-$sql = "VALUES ('$nama','$username','$password','$role')";
+$sql = "INSERT INTO tbl_user(nama_lengkap, username, password, role)";
+$sql .= "VALUES('$nama','$username','$password','$role')";
 
 if (mysqli_query($koneksi, $sql)){
     echo 'user admin berhasil dibuat. silakan hapus file ini.';
