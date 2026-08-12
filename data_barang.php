@@ -20,7 +20,7 @@ $sql = "SELECT * FROM tbl_barang ORDER BY nama_barang ASC";
 <tr>
                 <td><?php echo $row['kode_barang']; ?></td>
                 <td><?php echo $row['nama_barang']; ?></td>
-                <tr><?php echo number_format($row['harga_satuan'], 0, ',', '.'); ?></td>
+                <td><?php echo number_format($row['harga_satuan'], 0, ',', '.'); ?></td>
                 <td><?php echo $row['stok']; ?></td>
                 <td><?php echo $row['tanggal_kedaluarsa']; ?></td>
                 <td>
