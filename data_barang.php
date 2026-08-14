@@ -4,6 +4,7 @@ include 'includes/cek_session.php';
 include 'config/koneksi.php';
 
 $sql = "SELECT * FROM tbl_barang ORDER BY nama_barang ASC";
+$hasil = mysqli_query($koneksi, $sql);
 ?>
 <!DOCYTPE html>
 <html>
