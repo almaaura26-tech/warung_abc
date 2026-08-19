@@ -11,7 +11,7 @@
                 <td><input type="text" name="nama_pelanggan" required></td></tr>
                 <tr><td>no. hp</td><td>:</td>
                 <td><input type="text"name="no_hp"></td></tr>
-                <tr><td>almat</td><td>:</td>
+                <tr><td>alamat</td><td>:</td>
                 <td><input type="text" name="alamat"></td></tr>
                 <tr><td colspan="3"><input type="submit" values="simpan"></td></tr>
 </table>

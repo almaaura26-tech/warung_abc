@@ -19,7 +19,7 @@ include 'includes/cek_session.php';
 
             <?php if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'kasir'){ ?>
         <li><a href="transaksi.php">transaksi kasir</a></li>
-        <li><a href="riwayat_taransaksi.php">riwayat transaksi</a></li>
+        <li><a href="riwayat_transaksi.php">riwayat transaksi</a></li>
             <?php } ?>
 </ul>
         <a href="logout.php">logout</a>
